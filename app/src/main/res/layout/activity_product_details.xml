@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- ImageView for product image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/image_view_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/text_view_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@id/imager"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Product Category -->
+    <TextView
+        android:id="@+id/category"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_product_name"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp" />
+
+    <!-- Description -->
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/text_view_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/category"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Price -->
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/text_view_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/text_view_product_description"
+        android:layout_marginTop="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_product_price"
+        android:layout_centerHorizontal="true">
+        <!-- Product rating -->
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+        <!-- Product stock -->
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <!-- Product brand -->
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stock"
+            android:textSize="14sp" />
+
+        <!-- Product discount -->
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/discountpercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brand"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
